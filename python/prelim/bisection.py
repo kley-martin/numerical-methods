@@ -32,6 +32,7 @@ print("{0:<6}{1:<14}{2:<14}{3:<14}{4:<14}{5:<14}{6:<14}{7:<14}".format("iter", "
 for i in range(1, max_iter+1):
     xr_old = xr
     xr = (xl+xu)/2
+    
     if i > 1:
         ea = abs((xr - xr_old) / xr)
 
