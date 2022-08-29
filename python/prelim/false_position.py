@@ -17,7 +17,9 @@ if f(xu)*f(xl) >= 0:
     print("F(Xl) = " + str(f(xl)))
     print("F(Xu) = " + str(f(xu)))
 
-# if f(xu) > f()
+if f(xl) > f(xu):
+    xl, xu = xu, xl
+    print("Swapped Xu and Xl because <insert reason>")
 
 # algorithm
 xr = 0
@@ -28,7 +30,7 @@ print("{0:<6}{1:<14}{2:<14}{3:<14}{4:<14}{5:<14}{6:<14}{7:<14}".format("iter", "
 
 for i in range(1, max_iter+1):
     xr_old = xr
-    xr = (xl+xu)/2
+    xr = xu -(f(xu)*(xu-xl))/(f(xu)-f(xl))
     if i > 1:
         ea = abs((xr - xr_old) / xr)
 
