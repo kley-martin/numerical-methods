@@ -14,7 +14,7 @@ def f(x):
 
 
 # algorithm
-a = [5, -2, 6, -2, 1]
+a = [5, -2, 6, -2, 1]   # coefficients vector, TODO: Automate this
 b, c = [0] * (len(a)+2), [0] * (len(a)+2)
 ds, dr, ear, eas = 0, 0, 0, 0
 ea = 1
